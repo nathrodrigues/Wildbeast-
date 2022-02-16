@@ -29,7 +29,7 @@ img {
     grid-template-areas: 
     "header header header"
     "sidenav content anuncios"
-    "footer footer footer" ; /* Aqui estamos organizando o conteúdo - lembrando que só vão funcionar depois que posicionarmos eles*/
+    "footer footer footer" ; 
 }
 
 @media (max-width: 1200px) {
@@ -61,7 +61,7 @@ img {
     grid-area: header;
     background: linear-gradient(135deg, #8844ee, #B07DFB);
     padding: 30px;
-    display: grid; /* Foi feito isso p/ o menu e a logo ficarem separados*/
+    display: grid; 
     grid-template-columns: 1fr auto;
     align-items: center;
 }
@@ -89,7 +89,7 @@ img {
     background: rgba(0, 0, 0, .5);
 }
 
-.header li + li { /* Aqui não vai criar espaços desnecessários */
+.header li + li { 
     margin-left: 30px;
 }
 
@@ -145,8 +145,7 @@ img {
 @media (max-width: 760px) {
     .sidenav {
         position: relative;
-        overflow-x: auto; /* Cria aquele barra de rolagem exclusiva para o sidenav*/
-        /* -webkit-overflow-scrolling: touch; Não funciona mais - pesquisar qual é o novo comando*/
+        overflow-x: auto; 
     }
     .sidenav::after {
         content: '→';
@@ -189,12 +188,11 @@ img {
 }
 
 .col-wide {
-    grid-column: 1 / -1; /* conteudo se expande de ponta a ponta do container*/
-}
+    grid-column: 1 / -1; 
 
 .img {
-    grid-row: span 2; /* imagem ocupando duas linhas*/
-    align-self: end; /* selfie fala com um item especifico*/ 
+    grid-row: span 2; 
+    align-self: end; 
 }
 
 .img-2 {
@@ -238,7 +236,7 @@ p {
     align-items: flex-start;
 }
 
-.caracteristicas > div { /* sinal de > fala diretamente com as divs dentro de caract.*/
+.caracteristicas > div {
     width: 80px;
     text-align: center;
     background: linear-gradient(135deg, #8844ee, #B07DFB);
@@ -266,18 +264,18 @@ p {
     background: #FFF;
     border-radius: 0 0 5px 5px;
     padding: 5px 0;
-    position: relative; /* para o background do calendario não vazar*/
+    position: relative; 
     top: 2px;
 }
 
 .destaque {
     font-size: 0.875em;
     color: #B07DFB;
-    max-width: 16em; /* não estica de ponta a ponta a escrita*/
+    max-width: 16em; 
 }
 
 .citacao, .atributos {
-    align-self: start; /* p/ não deixar espaços desnecessários sobrando quando expandir*/
+    align-self: start;
     padding: 30px;
     border-radius: 5px;
     background: linear-gradient(135deg, #8844ee, #B07DFB);
@@ -290,18 +288,18 @@ p {
     text-align: center;
     color: #FFF;
     max-width: 500px;
-    margin: 0 auto; /* alinha o bloco ao centro*/
+    margin: 0 auto; 
 }
 
 .atributos li {
     color: #FFF;
-    font-family: 'Courier New', Courier, monospace; /* fonte para fichas*/
+    font-family: 'Courier New', Courier, monospace; 
     font-size: 1.125em;
     padding: 15px;
 }
 
 .atributos li + li {
-    border-top: 1px solid #B07DFB; /* Criandoa barra de separação de conteúdo somente nos itens do meio*/
+    border-top: 1px solid #B07DFB; 
 }
 
 /* Anúncios */
